@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="298.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../College/dsa/images.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="tableManagementButton" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" onAction="#tableManagement" text="Table Management" />
+      <Button fx:id="menuManagementButton" layoutX="21.0" layoutY="153.0" mnemonicParsing="false" onAction="#menuManagement" text="Menu Management" />
+      <Button fx:id="reservationManagementButton" layoutX="22.0" layoutY="103.0" mnemonicParsing="false" onAction="#reservationManagement" text="Reservation Management" textAlignment="CENTER" />
+      <Button fx:id="exitButton" layoutX="22.0" layoutY="244.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+         <font>
+            <Font name="Sitka Small" size="12.0" />
+         </font>
+      </Button>
+      <Label prefHeight="36.0" prefWidth="298.0" text="Restaurant Keeper">
+         <font>
+            <Font name="Vivaldi Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkInOutButton" layoutX="22.0" layoutY="200.0" mnemonicParsing="false" onAction="#checkInOut" text="Check in/out" />
+      <Button fx:id="purchasesButton" layoutX="132.0" layoutY="200.0" mnemonicParsing="false" onAction="#purchaseMenu" text="Purchases" />
+      <Button fx:id="resetButton" layoutX="132.0" layoutY="244.0" mnemonicParsing="false" onAction="#reset" text="RESET">
+         <font>
+            <Font name="Sitka Small" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

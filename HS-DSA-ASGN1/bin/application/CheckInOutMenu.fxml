@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckInOutMenuController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="298.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../College/dsa/images.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+         <font>
+            <Font name="Sitka Small" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="43.0" prefHeight="56.0" prefWidth="211.0" text="Check in/out">
+         <font>
+            <Font name="Vivaldi Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" onAction="#returnPage" text="Return" />
+      <Label layoutX="22.0" layoutY="56.0" prefHeight="17.0" prefWidth="110.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="CheckInButton" layoutX="57.0" layoutY="123.0" mnemonicParsing="false" onAction="#checkInReservation" text="Check In" />
+      <ChoiceBox fx:id="reservationNameBox" layoutX="57.0" layoutY="82.0" prefWidth="150.0" />
+      <Label layoutX="26.0" layoutY="61.0" prefHeight="21.0" prefWidth="230.0" text="Select table to be checked in/out">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkOutButton" layoutX="132.0" layoutY="123.0" mnemonicParsing="false" onAction="#checkOutReservation" text="Check Out" />
+   </children>
+</AnchorPane>
